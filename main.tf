@@ -22,7 +22,7 @@ resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh"
   description = "Allow SSH inbound traffic"
   vpc_id      = "Your vpc id" # Replace with your actual VPC ID 
-  # To See your vpc run this command  aws ec2 describe-vpcs --region ap-south-1 --query 'Vpcs[0].VpcId' --output text
+  # To See your vpc run this command:  aws ec2 describe-vpcs --region ap-south-1 --query 'Vpcs[0].VpcId' --output text
 
   ingress {
     from_port   = 22
